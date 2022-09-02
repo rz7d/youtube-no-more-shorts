@@ -1,0 +1,17 @@
+{
+  "name": "YouTube: No More Shorts!",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  }
+}

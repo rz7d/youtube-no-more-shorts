@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://www.youtube.com/watch?v=\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^.+://(.+\\.)?youtube\\.com/shorts/(.+)$",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "media",
+        "websocket",
+        "webtransport",
+        "webbundle",
+        "other"
+      ]
+    }
+  }
+]
